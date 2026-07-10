@@ -1,4 +1,6 @@
 import Link from "next/link";
+import SiteHeader from "@/components/SiteHeader";
+import SiteFooter from "@/components/SiteFooter";
 
 const services = [
   {
@@ -48,56 +50,8 @@ const services = [
 export default function Home() {
   return (
     <>
-      {/* Header / TopAppBar */}
-      <header className="w-full top-0 sticky z-50 bg-surface border-b border-outline-variant flat no shadows">
-        <div className="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-unit max-w-[1280px] mx-auto h-16">
-          <div className="flex items-center gap-2">
-            <span className="font-headline-lg text-headline-lg font-bold text-primary">
-              Car Recovery Team
-            </span>
-          </div>
-          <div className="hidden md:flex gap-8 items-center">
-            <nav className="flex gap-6">
-              <Link
-                href="/"
-                className="font-label-md text-label-md text-primary border-b-2 border-primary pb-1"
-              >
-                Home
-              </Link>
-              <a
-                href="/services"
-                className="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors"
-              >
-                Services
-              </a>
-              <a
-                href="/about"
-                className="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors"
-              >
-                About
-              </a>
-            </nav>
-            <div className="flex items-center gap-4">
-              <div className="flex flex-col items-end">
-                <span className="font-label-md text-label-md text-on-surface-variant">
-                  +44 7856 978630
-                </span>
-              </div>
-              <button className="bg-primary-container text-on-primary-container px-6 py-2 font-label-md text-label-md font-bold uppercase tracking-wider hover:bg-primary-fixed-dim transition-all active:scale-95 flex items-center gap-2">
-                <span className="material-symbols-outlined text-[18px]">
-                  phone_in_talk
-                </span>
-                Call Now
-              </button>
-            </div>
-          </div>
-          {/* Mobile Action */}
-          <button className="md:hidden bg-primary-container text-on-primary-container p-2 active:scale-95">
-            <span className="material-symbols-outlined">phone_in_talk</span>
-          </button>
-        </div>
-      </header>
-      <main>
+      <SiteHeader />
+      <main className="pt-20">
         {/* Hero Section */}
         <section className="relative min-h-[85vh] flex items-center overflow-hidden border-b border-outline-variant">
           <div className="absolute inset-0 z-0">
@@ -137,10 +91,13 @@ export default function Home() {
                   </span>
                   Call Now: +44 7856 978630
                 </a>
-                <button className="border border-outline px-8 py-4 font-headline-lg text-headline-lg text-white hover:bg-surface-variant transition-all flex items-center justify-center gap-3">
+                <Link
+                  href="/services"
+                  className="border border-outline px-8 py-4 font-headline-lg text-headline-lg text-white hover:bg-surface-variant transition-all flex items-center justify-center gap-3"
+                >
                   <span className="material-symbols-outlined">info</span>
                   Our Services
-                </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -283,123 +240,7 @@ export default function Home() {
           </div>
         </section>
       </main>
-
-      {/* Footer */}
-      <footer className="w-full mt-auto bg-surface-container-lowest border-t border-outline-variant">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter px-margin-mobile md:px-margin-desktop py-12 max-w-[1280px] mx-auto">
-          {/* Brand & Info */}
-          <div className="space-y-6">
-            <span className="font-headline-lg text-headline-lg font-bold text-primary">
-              Car Recovery Team
-            </span>
-            <p className="font-body-md text-body-md text-on-surface-variant max-w-xs">
-              Reliable, professional, and fast recovery services. Available
-              24/7 across the region for all your roadside assistance needs.
-            </p>
-            <div className="flex gap-4">
-              <a
-                className="w-10 h-10 border border-outline-variant flex items-center justify-center hover:bg-primary-container hover:text-on-primary-container transition-colors"
-                href="#"
-              >
-                <span className="material-symbols-outlined text-[20px]">
-                  public
-                </span>
-              </a>
-            </div>
-          </div>
-          {/* Services Links */}
-          <div className="space-y-6">
-            <h4 className="font-label-md text-label-md font-bold uppercase tracking-widest text-primary">
-              Our Services
-            </h4>
-            <div className="grid grid-cols-1 gap-3">
-              <a
-                className="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors"
-                href="#"
-              >
-                Breakdown Recovery
-              </a>
-              <a
-                className="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors"
-                href="#"
-              >
-                Car Towing
-              </a>
-              <a
-                className="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors"
-                href="#"
-              >
-                Jump Start
-              </a>
-              <a
-                className="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors"
-                href="#"
-              >
-                Fuel Delivery
-              </a>
-              <a
-                className="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors"
-                href="#"
-              >
-                Tyre Change
-              </a>
-              <a
-                className="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors"
-                href="#"
-              >
-                Roadside Assistance
-              </a>
-            </div>
-          </div>
-          {/* Contact */}
-          <div className="space-y-6">
-            <h4 className="font-label-md text-label-md font-bold uppercase tracking-widest text-primary">
-              Get Help Now
-            </h4>
-            <div className="space-y-4">
-              <div className="flex items-center gap-3">
-                <span className="material-symbols-outlined text-primary-container">
-                  phone
-                </span>
-                <span className="font-headline-lg text-headline-lg text-on-surface">
-                  +44 7856 978630
-                </span>
-              </div>
-              <div className="flex items-center gap-3">
-                <span className="material-symbols-outlined text-primary-container">
-                  alarm
-                </span>
-                <span className="font-body-md text-body-md text-on-surface-variant">
-                  Available 24 hours / 7 days a week
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* Bottom Bar */}
-        <div className="border-t border-outline-variant py-6">
-          <div className="px-margin-mobile md:px-margin-desktop max-w-[1280px] mx-auto flex flex-col md:row justify-between gap-4">
-            <p className="font-body-md text-body-md text-on-surface-variant text-center md:text-left">
-              © 2024 Car Recovery Team. All rights reserved. Professional
-              Roadside Assistance.
-            </p>
-            <div className="flex justify-center gap-6">
-              <a
-                className="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors"
-                href="#"
-              >
-                Privacy Policy
-              </a>
-              <a
-                className="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors"
-                href="#"
-              >
-                Terms of Service
-              </a>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
     </>
   );
 }

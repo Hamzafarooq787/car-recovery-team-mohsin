@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import AboutHeader from "./AboutHeader";
+import SiteHeader from "@/components/SiteHeader";
+import SiteFooter from "@/components/SiteFooter";
 
 export const metadata: Metadata = {
   title: "About Us | Car Recovery Team",
@@ -21,7 +22,7 @@ export default function AboutPage() {
           border-left: 4px solid #ffd700;
         }
       `}</style>
-      <AboutHeader />
+      <SiteHeader />
       <main className="pt-20">
         {/* Hero Section */}
         <section className="relative min-h-[70vh] flex items-center overflow-hidden border-b border-secondary-container">
@@ -280,122 +281,7 @@ export default function AboutPage() {
           </div>
         </section>
       </main>
-
-      {/* Footer */}
-      <footer className="bg-surface-container-lowest border-t border-secondary-container pt-16 pb-8">
-        <div className="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-gutter mb-12">
-            <div className="col-span-1 md:col-span-2">
-              <div className="font-headline-lg text-headline-lg font-bold text-primary-container mb-6">
-                Car Recovery Team
-              </div>
-              <p className="text-on-surface-variant max-w-sm mb-6">
-                Providing elite roadside assistance and vehicle recovery
-                services across the region. Reliable, insured, and
-                professional 24/7/365.
-              </p>
-              <div className="flex gap-4">
-                <span className="material-symbols-outlined text-on-surface-variant hover:text-primary-container cursor-pointer">
-                  face_nod
-                </span>
-                <span className="material-symbols-outlined text-on-surface-variant hover:text-primary-container cursor-pointer">
-                  share
-                </span>
-              </div>
-            </div>
-            <div>
-              <h4 className="text-white font-bold mb-6 font-headline-lg text-[20px]">
-                Services
-              </h4>
-              <ul className="space-y-3">
-                <li>
-                  <a
-                    className="text-on-surface-variant hover:text-on-surface transition-colors"
-                    href="#"
-                  >
-                    Breakdown Recovery
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="text-on-surface-variant hover:text-on-surface transition-colors"
-                    href="#"
-                  >
-                    Car Towing
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="text-on-surface-variant hover:text-on-surface transition-colors"
-                    href="#"
-                  >
-                    Jump Start
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="text-on-surface-variant hover:text-on-surface transition-colors"
-                    href="#"
-                  >
-                    Fuel Delivery
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="text-on-surface-variant hover:text-on-surface transition-colors"
-                    href="#"
-                  >
-                    Tyre Change
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-white font-bold mb-6 font-headline-lg text-[20px]">
-                Legal
-              </h4>
-              <ul className="space-y-3">
-                <li>
-                  <a
-                    className="text-on-surface-variant hover:text-on-surface transition-colors"
-                    href="#"
-                  >
-                    Privacy Policy
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="text-on-surface-variant hover:text-on-surface transition-colors"
-                    href="#"
-                  >
-                    Terms of Service
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="text-on-surface-variant hover:text-on-surface transition-colors"
-                    href="#"
-                  >
-                    Cookie Policy
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-secondary-container pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-[14px]">
-            <p className="text-on-surface-variant text-center md:text-left">
-              © 2024 Car Recovery Team. 24/7 Professional Roadside
-              Assistance.
-            </p>
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-              <span className="text-on-surface-variant">
-                System Status: All Vehicles Operational
-              </span>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

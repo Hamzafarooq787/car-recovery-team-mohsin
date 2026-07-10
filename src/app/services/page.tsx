@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import SiteHeader from "@/components/SiteHeader";
+import SiteFooter from "@/components/SiteFooter";
 
 export const metadata: Metadata = {
   title: "Our Recovery Services | Car Recovery Team",
@@ -59,53 +61,7 @@ const services = [
 export default function ServicesPage() {
   return (
     <div className="font-body-md">
-      {/* TopAppBar */}
-      <header className="fixed top-0 w-full z-50 bg-background border-b border-secondary-container">
-        <nav className="flex justify-between items-center px-4 md:px-margin-desktop py-4 max-w-[1280px] mx-auto">
-          <div className="font-headline-lg text-headline-lg-mobile md:text-headline-lg font-bold text-primary-container">
-            Car Recovery Team
-          </div>
-          <div className="hidden md:flex items-center gap-8">
-            <Link
-              className="text-on-surface hover:text-primary-container transition-colors font-body-md"
-              href="/"
-            >
-              Home
-            </Link>
-            <a
-              className="text-primary-container font-bold border-b-2 border-primary-container pb-1 font-body-md"
-              href="/services"
-            >
-              Services
-            </a>
-            <a
-              className="text-on-surface hover:text-primary-container transition-colors font-body-md"
-              href="/about"
-            >
-              About Us
-            </a>
-            <a
-              className="text-on-surface hover:text-primary-container transition-colors font-body-md"
-              href="/contact"
-            >
-              Contact Us
-            </a>
-          </div>
-          <div className="flex items-center gap-4">
-            <div className="hidden lg:block text-right">
-              <p className="text-on-surface-variant text-sm font-label-md">
-                24/7 Hotline
-              </p>
-              <p className="text-primary-container font-bold">
-                +44 7856 978630
-              </p>
-            </div>
-            <button className="bg-primary-container text-on-primary-container px-6 py-2 font-bold hover:bg-primary-fixed-dim transition-all active:scale-95">
-              Call Now
-            </button>
-          </div>
-        </nav>
-      </header>
+      <SiteHeader />
       <main className="pt-24 pb-20">
         {/* Hero Section */}
         <section className="relative overflow-hidden py-20 px-4 md:px-margin-desktop">
@@ -179,118 +135,16 @@ export default function ServicesPage() {
                 </p>
               </div>
             </div>
-            <button className="w-full md:w-auto bg-error text-on-error px-10 py-5 font-bold uppercase text-xl shadow-lg hover:scale-105 active:scale-95 transition-transform">
+            <a
+              href="tel:+447856978630"
+              className="w-full md:w-auto bg-error text-on-error px-10 py-5 font-bold uppercase text-xl shadow-lg hover:scale-105 active:scale-95 transition-transform text-center"
+            >
               Emergency Call Now
-            </button>
+            </a>
           </div>
         </section>
       </main>
-
-      {/* Footer */}
-      <footer className="bg-surface-container-lowest border-t border-secondary-container">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter px-4 md:px-margin-desktop py-12 max-w-[1280px] mx-auto">
-          <div className="space-y-6">
-            <div className="font-headline-lg text-headline-lg font-bold text-primary-container">
-              Car Recovery Team
-            </div>
-            <p className="text-on-surface-variant max-w-xs font-body-md">
-              Professional 24/7 roadside assistance and vehicle recovery
-              services you can trust when it matters most.
-            </p>
-          </div>
-          <div className="grid grid-cols-2 gap-4">
-            <div className="flex flex-col gap-3">
-              <h4 className="font-label-md text-primary-container mb-2">
-                SERVICES
-              </h4>
-              <a
-                className="text-on-surface-variant hover:text-on-surface transition-colors font-body-md"
-                href="#"
-              >
-                Breakdown Recovery
-              </a>
-              <a
-                className="text-on-surface-variant hover:text-on-surface transition-colors font-body-md"
-                href="#"
-              >
-                Car Towing
-              </a>
-              <a
-                className="text-on-surface-variant hover:text-on-surface transition-colors font-body-md"
-                href="#"
-              >
-                Jump Start
-              </a>
-              <a
-                className="text-on-surface-variant hover:text-on-surface transition-colors font-body-md"
-                href="#"
-              >
-                Fuel Delivery
-              </a>
-            </div>
-            <div className="flex flex-col gap-3">
-              <h4 className="font-label-md text-primary-container mb-2">
-                QUICK LINKS
-              </h4>
-              <a
-                className="text-on-surface-variant hover:text-on-surface transition-colors font-body-md"
-                href="#"
-              >
-                Tyre Change
-              </a>
-              <a
-                className="text-on-surface-variant hover:text-on-surface transition-colors font-body-md"
-                href="#"
-              >
-                Roadside Assistance
-              </a>
-              <a
-                className="text-on-surface-variant hover:text-on-surface transition-colors font-body-md"
-                href="#"
-              >
-                Privacy Policy
-              </a>
-              <a
-                className="text-on-surface-variant hover:text-on-surface transition-colors font-body-md"
-                href="#"
-              >
-                Terms of Service
-              </a>
-            </div>
-          </div>
-          <div className="flex flex-col gap-6">
-            <h4 className="font-label-md text-primary-container">
-              CONTACT US
-            </h4>
-            <div className="space-y-2">
-              <p className="flex items-center gap-2 text-on-surface">
-                <span className="material-symbols-outlined text-primary-container">
-                  call
-                </span>
-                <span className="font-bold">+44 7856 978630</span>
-              </p>
-              <p className="flex items-center gap-2 text-on-surface-variant">
-                <span className="material-symbols-outlined text-primary-container">
-                  mail
-                </span>
-                <span>help@carrecoveryteam.co.uk</span>
-              </p>
-              <p className="flex items-center gap-2 text-on-surface-variant">
-                <span className="material-symbols-outlined text-primary-container">
-                  schedule
-                </span>
-                <span>Available 24 Hours / 7 Days</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="border-t border-secondary-container py-6 text-center">
-          <p className="text-on-surface-variant text-sm font-label-md">
-            © 2024 Car Recovery Team. 24/7 Professional Roadside
-            Assistance.
-          </p>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }
