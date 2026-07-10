@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import AboutHeader from "./AboutHeader";
 
 export const metadata: Metadata = {
@@ -55,12 +56,18 @@ export default function AboutPage() {
                 roadside assistance specialists.
               </p>
               <div className="flex flex-wrap gap-4">
-                <button className="bg-primary-container text-on-primary-container px-8 py-4 font-bold text-lg hover:bg-primary-fixed-dim transition-all emergency-glow">
+                <a
+                  href="tel:+447856978630"
+                  className="bg-primary-container text-on-primary-container px-8 py-4 font-bold text-lg hover:bg-primary-fixed-dim transition-all emergency-glow"
+                >
                   GET IMMEDIATE HELP
-                </button>
-                <button className="border border-on-surface text-on-surface px-8 py-4 font-bold text-lg hover:bg-surface-container-highest transition-all">
+                </a>
+                <Link
+                  href="/services"
+                  className="border border-on-surface text-on-surface px-8 py-4 font-bold text-lg hover:bg-surface-container-highest transition-all"
+                >
                   VIEW OUR SERVICES
-                </button>
+                </Link>
               </div>
             </div>
           </div>

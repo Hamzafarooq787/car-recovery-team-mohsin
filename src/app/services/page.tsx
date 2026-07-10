@@ -148,9 +148,12 @@ export default function ServicesPage() {
                 <p className="text-on-surface-variant font-body-md mb-8 flex-grow">
                   {service.description}
                 </p>
-                <button className="w-full bg-primary-container text-on-primary-container py-4 font-bold uppercase tracking-widest hover:bg-primary-fixed-dim transition-all active:scale-95">
+                <Link
+                  href="/contact"
+                  className="w-full bg-primary-container text-on-primary-container py-4 font-bold uppercase tracking-widest hover:bg-primary-fixed-dim transition-all active:scale-95 text-center"
+                >
                   Request Assistance
-                </button>
+                </Link>
               </article>
             ))}
           </div>
