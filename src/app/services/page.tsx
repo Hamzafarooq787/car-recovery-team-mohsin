@@ -137,7 +137,7 @@ export default function ServicesPage() {
             </div>
             <a
               href="tel:+447856978630"
-              className="w-full md:w-auto bg-error text-on-error px-10 py-5 font-bold uppercase text-xl shadow-lg hover:scale-105 active:scale-95 transition-transform text-center"
+              className="w-full md:w-auto bg-error text-on-error px-6 sm:px-10 py-4 sm:py-5 font-bold uppercase text-base sm:text-lg md:text-xl sm:whitespace-nowrap shadow-lg hover:scale-105 active:scale-95 transition-transform text-center"
             >
               Emergency Call Now
             </a>

@@ -49,7 +49,7 @@ export default function ContactPage() {
                   professional recovery.
                 </p>
                 <a
-                  className="emergency-pulse inline-flex items-center justify-center bg-primary-container text-on-primary-container w-full md:w-auto px-8 py-5 text-xl font-bold uppercase tracking-tight gap-3 hover:bg-primary-fixed-dim transition-all"
+                  className="emergency-pulse inline-flex items-center justify-center bg-primary-container text-on-primary-container w-full md:w-auto px-6 sm:px-8 py-4 sm:py-5 text-base sm:text-lg md:text-xl font-bold uppercase tracking-tight sm:whitespace-nowrap gap-3 hover:bg-primary-fixed-dim transition-all"
                   href="tel:+447856978630"
                 >
                   <span

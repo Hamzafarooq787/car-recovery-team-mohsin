@@ -269,10 +269,10 @@ export default function AboutPage() {
             </p>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
               <a
-                className="w-full sm:w-auto bg-primary-container text-on-primary-container px-12 py-5 font-bold text-2xl hover:bg-primary-fixed-dim transition-all emergency-glow flex items-center justify-center gap-3"
+                className="w-full sm:w-auto bg-primary-container text-on-primary-container px-6 sm:px-12 py-4 sm:py-5 font-bold text-base sm:text-xl md:text-2xl sm:whitespace-nowrap hover:bg-primary-fixed-dim transition-all emergency-glow flex items-center justify-center gap-3"
                 href="tel:+447856978630"
               >
-                <span className="material-symbols-outlined text-3xl">
+                <span className="material-symbols-outlined text-2xl sm:text-3xl">
                   call
                 </span>
                 CALL +44 7856 978630
