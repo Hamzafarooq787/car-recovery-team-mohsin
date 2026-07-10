@@ -40,7 +40,7 @@ export default function AboutPage() {
                 <span className="material-symbols-outlined text-[18px]">
                   verified
                 </span>
-                <span className="font-label-md uppercase tracking-wider text-[12px]">
+                <span className="font-label-md uppercase sm:tracking-wider text-[11px] sm:text-[12px] leading-snug">
                   Professional Excellence since 2010
                 </span>
               </div>
@@ -201,7 +201,7 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-6 gap-4 h-full md:h-[600px]">
-              <div className="md:col-span-3 bg-surface-container-highest p-8 flex flex-col justify-end border border-secondary-container hover:border-primary-container transition-all group relative overflow-hidden">
+              <div className="md:col-span-3 min-h-[220px] bg-surface-container-highest p-8 flex flex-col justify-end border border-secondary-container hover:border-primary-container transition-all group relative overflow-hidden">
                 <span className="material-symbols-outlined text-primary-container absolute top-8 right-8 text-5xl opacity-20 group-hover:opacity-100 transition-all">
                   battery_charging_full
                 </span>
@@ -213,7 +213,7 @@ export default function AboutPage() {
                   you moving without a tow.
                 </p>
               </div>
-              <div className="md:col-span-3 bg-surface-container-highest p-8 flex flex-col justify-end border border-secondary-container hover:border-primary-container transition-all group relative overflow-hidden">
+              <div className="md:col-span-3 min-h-[220px] bg-surface-container-highest p-8 flex flex-col justify-end border border-secondary-container hover:border-primary-container transition-all group relative overflow-hidden">
                 <span className="material-symbols-outlined text-primary-container absolute top-8 right-8 text-5xl opacity-20 group-hover:opacity-100 transition-all">
                   tire_repair
                 </span>
@@ -225,7 +225,7 @@ export default function AboutPage() {
                   hydraulic equipment on any vehicle type.
                 </p>
               </div>
-              <div className="md:col-span-4 bg-surface-container-high p-8 flex flex-col justify-end border border-secondary-container hover:border-primary-container transition-all group relative overflow-hidden">
+              <div className="md:col-span-4 min-h-[220px] bg-surface-container-high p-8 flex flex-col justify-end border border-secondary-container hover:border-primary-container transition-all group relative overflow-hidden">
                 <span className="material-symbols-outlined text-primary-container absolute top-8 right-8 text-5xl opacity-20 group-hover:opacity-100 transition-all">
                   art_track
                 </span>
@@ -237,7 +237,7 @@ export default function AboutPage() {
                   pickups and guaranteed delivery times.
                 </p>
               </div>
-              <div className="md:col-span-2 bg-primary-container p-8 flex flex-col justify-end border border-primary-container hover:bg-primary-fixed-dim transition-all group relative overflow-hidden">
+              <div className="md:col-span-2 min-h-[220px] bg-primary-container p-8 flex flex-col justify-end border border-primary-container hover:bg-primary-fixed-dim transition-all group relative overflow-hidden">
                 <span className="material-symbols-outlined text-on-primary-container absolute top-8 right-8 text-5xl">
                   warning
                 </span>
