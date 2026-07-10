@@ -86,12 +86,6 @@ export default function SiteFooter() {
             </a>
             <p className="flex items-center gap-2 text-on-surface-variant font-body-md">
               <span className="material-symbols-outlined text-primary-container">
-                mail
-              </span>
-              help@carrecoveryteam.co.uk
-            </p>
-            <p className="flex items-center gap-2 text-on-surface-variant font-body-md">
-              <span className="material-symbols-outlined text-primary-container">
                 schedule
               </span>
               Available 24 Hours / 7 Days
