@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const services = [
   {
     name: "Breakdown Recovery",
@@ -56,20 +58,20 @@ export default function Home() {
           </div>
           <div className="hidden md:flex gap-8 items-center">
             <nav className="flex gap-6">
-              <a
-                href="#"
+              <Link
+                href="/"
                 className="font-label-md text-label-md text-primary border-b-2 border-primary pb-1"
               >
                 Home
-              </a>
+              </Link>
               <a
-                href="#"
+                href="/services"
                 className="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors"
               >
                 Services
               </a>
               <a
-                href="#"
+                href="/about"
                 className="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors"
               >
                 About
