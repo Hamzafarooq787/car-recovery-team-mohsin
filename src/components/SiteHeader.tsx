@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -29,11 +30,15 @@ export default function SiteHeader() {
       }`}
     >
       <div className="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-[1280px] mx-auto">
-        <Link
-          href="/"
-          className="font-headline-lg text-headline-lg-mobile md:text-headline-lg font-bold text-primary-container"
-        >
-          Car Recovery Team
+        <Link href="/" className="shrink-0" aria-label="Car Recovery Team home">
+          <Image
+            src="/car-recovery-team-logo.webp"
+            alt="Car Recovery Team"
+            width={995}
+            height={349}
+            priority
+            className="h-9 sm:h-11 w-auto"
+          />
         </Link>
 
         <nav className="hidden md:flex gap-8 items-center">
