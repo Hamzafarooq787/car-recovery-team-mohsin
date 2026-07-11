@@ -103,7 +103,7 @@ export default function SiteFooter() {
       <div className="border-t border-secondary-container py-6">
         <div className="px-margin-mobile md:px-margin-desktop max-w-[1280px] mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
           <p className="text-on-surface-variant text-sm font-body-md">
-            © 2024 Car Recovery Team. 24/7 Professional Roadside Assistance.
+            © 2026 Car Recovery Team. 24/7 Professional Roadside Assistance.
           </p>
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
