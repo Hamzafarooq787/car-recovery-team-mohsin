@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const quickLinks = [
@@ -22,9 +23,13 @@ export default function SiteFooter() {
       <div className="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-12 max-w-[1280px] mx-auto">
         {/* Brand & Info */}
         <div className="space-y-6 md:col-span-1">
-          <div className="font-headline-lg text-headline-lg font-bold text-primary-container">
-            Car Recovery Team
-          </div>
+          <Image
+            src="/car-recovery-team-logo.webp"
+            alt="Car Recovery Team"
+            width={995}
+            height={349}
+            className="h-10 w-auto"
+          />
           <p className="text-on-surface-variant max-w-xs font-body-md">
             Professional 24/7 roadside assistance and vehicle recovery
             services you can trust when it matters most.

@@ -4,7 +4,7 @@ import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 
 export const metadata: Metadata = {
-  title: "Our Recovery Services | Car Recovery Team",
+  title: "Our Recovery Services",
 };
 
 const services = [

@@ -4,7 +4,7 @@ import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Car Recovery Team",
+  title: "Contact Us",
 };
 
 export default function ContactPage() {
