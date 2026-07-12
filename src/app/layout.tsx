@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import FloatingActions from "@/components/FloatingActions";
 
-const siteUrl = "https://car-recovery-team-mohsin.vercel.app";
+const siteUrl = "https://carrecoveryteam.uk";
 const siteTitle = "Car Recovery Team";
 const siteDescription =
   "Reliable, professional, and fast recovery services. Available 24/7 across the region for all your roadside assistance needs.";
