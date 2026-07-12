@@ -1,10 +1,46 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import FloatingActions from "@/components/FloatingActions";
+
+const siteUrl = "https://car-recovery-team-mohsin.vercel.app";
+const siteTitle = "Car Recovery Team";
+const siteDescription =
+  "Reliable, professional, and fast recovery services. Available 24/7 across the region for all your roadside assistance needs.";
 
 export const metadata: Metadata = {
-  title: "Car Recovery Team",
-  description:
-    "Reliable, professional, and fast recovery services. Available 24/7 across the region for all your roadside assistance needs.",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: siteTitle,
+    template: `%s | ${siteTitle}`,
+  },
+  description: siteDescription,
+  icons: {
+    icon: "/CR-site-icon.webp",
+    shortcut: "/CR-site-icon.webp",
+    apple: "/CR-site-icon.webp",
+  },
+  openGraph: {
+    title: siteTitle,
+    description: siteDescription,
+    url: siteUrl,
+    siteName: siteTitle,
+    images: [
+      {
+        url: "/car-recovery-team-og.webp",
+        width: 1110,
+        height: 580,
+        alt: "Car Recovery Team - Fast & Reliable Car Recovery When You Need It Most",
+      },
+    ],
+    locale: "en_GB",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteTitle,
+    description: siteDescription,
+    images: ["/car-recovery-team-og.webp"],
+  },
 };
 
 export default function RootLayout({
@@ -26,6 +62,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-full flex flex-col bg-background text-on-background selection:bg-primary-container selection:text-on-primary-container">
         {children}
+        <FloatingActions />
       </body>
     </html>
   );

@@ -4,7 +4,7 @@ import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Car Recovery Team",
+  title: "Contact Us",
 };
 
 export default function ContactPage() {
@@ -92,41 +92,28 @@ export default function ContactPage() {
               Non-Urgent Inquiries
             </h2>
             <p className="text-on-surface-variant font-body-md mb-8">
-              For quotes, booking inquiries, or general questions, please use
-              the form below. We typically respond within 2 hours during
-              business windows.
+              For quotes, booking inquiries, or general questions, fill in
+              the form below and we&apos;ll open WhatsApp with your details
+              ready to send straight to our team.
             </p>
             <ContactForm />
           </div>
-          {/* Contact Info & Quick Info */}
+          {/* Contact Info */}
           <div className="lg:col-span-4 flex flex-col gap-gutter">
             <div className="bg-surface-container-high p-8 border-l-4 border-primary-container flex-grow">
               <h3 className="font-headline-lg text-headline-lg mb-6 text-on-background">
-                Find Us
+                Get In Touch
               </h3>
               <div className="space-y-6">
                 <div className="flex gap-4">
                   <span className="material-symbols-outlined text-primary-container">
-                    mail
+                    call
                   </span>
                   <div>
                     <p className="font-label-md text-xs uppercase text-on-surface-variant">
-                      Email Support
+                      Phone
                     </p>
-                    <p className="font-body-lg">help@carrecoveryteam.co.uk</p>
-                  </div>
-                </div>
-                <div className="flex gap-4">
-                  <span className="material-symbols-outlined text-primary-container">
-                    location_on
-                  </span>
-                  <div>
-                    <p className="font-label-md text-xs uppercase text-on-surface-variant">
-                      Operating Area
-                    </p>
-                    <p className="font-body-lg">
-                      Greater London &amp; Surrounding Counties
-                    </p>
+                    <p className="font-body-lg">+44 7856 978630</p>
                   </div>
                 </div>
                 <div className="flex gap-4">
@@ -142,21 +129,6 @@ export default function ContactPage() {
                     </p>
                   </div>
                 </div>
-              </div>
-            </div>
-            {/* Live Map / Service Area Placeholder */}
-            <div className="bg-surface-container p-4 border border-secondary-container h-64 relative overflow-hidden group">
-              <div className="absolute inset-0 bg-surface-container-highest">
-                <img
-                  alt="A stylized, high-contrast dark mode map showing the London metropolitan area with highlighted service zones. The map uses a palette of Deep Charcoal, Surface Grey, and sharp Emergency Yellow lines to indicate major motorways and response hubs. The style is technical and clean, resembling a GPS navigation interface optimized for visibility."
-                  className="w-full h-full object-cover opacity-50 group-hover:scale-105 transition-transform duration-700"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDE8kf1nKkcSvVEWL5NwBJG-kpp-dG-IAsvzZfG3DSl-CPXB6hnAty0m6pnWxjIgWMRpQOOUNo-M5kF7ujDY3WdMiifNfnwWqmI_SFJZterRKzSmifDLWw2esENvOkGUWyKAc8V1EmPFGTMiiZgHx9yNZSxQMS6jH_SFzdPZ-HQLSiDjddko5TPfDJJVnn3t5ansIMqLz86yhvynQmY3KRs644tU__j2Kr-7kAVhrS17Crlsp6Xb9QXZ-1FpEymLV8kAHSBITy_qTw"
-                />
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent flex items-end p-4">
-                <p className="font-label-md text-xs uppercase text-primary-container">
-                  Dispatch Zone: Active
-                </p>
               </div>
             </div>
           </div>

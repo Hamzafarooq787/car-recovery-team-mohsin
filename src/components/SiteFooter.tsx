@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const quickLinks = [
@@ -22,9 +23,13 @@ export default function SiteFooter() {
       <div className="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-12 max-w-[1280px] mx-auto">
         {/* Brand & Info */}
         <div className="space-y-6 md:col-span-1">
-          <div className="font-headline-lg text-headline-lg font-bold text-primary-container">
-            Car Recovery Team
-          </div>
+          <Image
+            src="/car-recovery-team-logo.webp"
+            alt="Car Recovery Team"
+            width={995}
+            height={349}
+            className="h-10 w-auto"
+          />
           <p className="text-on-surface-variant max-w-xs font-body-md">
             Professional 24/7 roadside assistance and vehicle recovery
             services you can trust when it matters most.
@@ -86,12 +91,6 @@ export default function SiteFooter() {
             </a>
             <p className="flex items-center gap-2 text-on-surface-variant font-body-md">
               <span className="material-symbols-outlined text-primary-container">
-                mail
-              </span>
-              help@carrecoveryteam.co.uk
-            </p>
-            <p className="flex items-center gap-2 text-on-surface-variant font-body-md">
-              <span className="material-symbols-outlined text-primary-container">
                 schedule
               </span>
               Available 24 Hours / 7 Days
@@ -104,7 +103,7 @@ export default function SiteFooter() {
       <div className="border-t border-secondary-container py-6">
         <div className="px-margin-mobile md:px-margin-desktop max-w-[1280px] mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
           <p className="text-on-surface-variant text-sm font-body-md">
-            © 2024 Car Recovery Team. 24/7 Professional Roadside Assistance.
+            © 2026 Car Recovery Team. 24/7 Professional Roadside Assistance.
           </p>
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
