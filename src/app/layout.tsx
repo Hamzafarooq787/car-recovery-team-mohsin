@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import FloatingActions from "@/components/FloatingActions";
 
 export const metadata: Metadata = {
   title: "Car Recovery Team",
@@ -26,6 +27,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-full flex flex-col bg-background text-on-background selection:bg-primary-container selection:text-on-primary-container">
         {children}
+        <FloatingActions />
       </body>
     </html>
   );

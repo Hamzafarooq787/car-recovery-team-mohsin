@@ -77,12 +77,12 @@ export default function SiteFooter() {
           <div className="space-y-3">
             <a
               className="flex items-center gap-2 text-on-surface hover:text-primary-container transition-colors font-bold"
-              href="tel:+447856978630"
+              href="tel:+447845297881"
             >
               <span className="material-symbols-outlined text-primary-container">
                 call
               </span>
-              +44 7856 978630
+              07845 297881
             </a>
             <p className="flex items-center gap-2 text-on-surface-variant font-body-md">
               <span className="material-symbols-outlined text-primary-container">
