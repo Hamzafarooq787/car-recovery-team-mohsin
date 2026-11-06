@@ -80,7 +80,7 @@ export default function Home() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href="tel:+447856978630"
+                  href="tel:+447845297881"
                   className="bg-primary-container text-on-primary-container px-6 sm:px-8 py-4 font-headline-lg text-base sm:text-lg md:text-headline-lg sm:whitespace-nowrap flex items-center justify-center gap-3 hover:bg-primary-fixed-dim transition-all active:scale-95"
                 >
                   <span
@@ -89,7 +89,7 @@ export default function Home() {
                   >
                     call
                   </span>
-                  Call Now: +44 7856 978630
+                  Call Now: 07845 297881
                 </a>
                 <Link
                   href="/services"
@@ -230,12 +230,12 @@ export default function Home() {
             </p>
             <a
               className="inline-flex bg-surface text-primary px-6 sm:px-12 py-4 sm:py-6 font-headline-xl text-xl sm:text-2xl md:text-headline-xl uppercase tracking-tighter sm:whitespace-nowrap hover:bg-surface-variant transition-all group items-center gap-4"
-              href="tel:+447856978630"
+              href="tel:+447845297881"
             >
               <span className="material-symbols-outlined text-[28px] sm:text-[40px] group-hover:rotate-12 transition-transform">
                 phone_in_talk
               </span>
-              +44 7856 978630
+              07845 297881
             </a>
           </div>
         </section>

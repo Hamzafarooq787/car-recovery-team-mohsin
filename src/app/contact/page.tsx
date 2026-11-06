@@ -50,7 +50,7 @@ export default function ContactPage() {
                 </p>
                 <a
                   className="emergency-pulse inline-flex items-center justify-center bg-primary-container text-on-primary-container w-full md:w-auto px-6 sm:px-8 py-4 sm:py-5 text-base sm:text-lg md:text-xl font-bold uppercase tracking-tight sm:whitespace-nowrap gap-3 hover:bg-primary-fixed-dim transition-all"
-                  href="tel:+447856978630"
+                  href="tel:+447845297881"
                 >
                   <span
                     className="material-symbols-outlined"
@@ -58,7 +58,7 @@ export default function ContactPage() {
                   >
                     phone_in_talk
                   </span>
-                  Call +44 7856 978630
+                  Call 07845 297881
                 </a>
               </div>
               <div className="hidden md:block">
@@ -202,7 +202,7 @@ export default function ContactPage() {
                 Call for Help
               </h3>
               <p className="text-on-surface-variant">
-                Contact +44 7856 978630. Provide your location (use
+                Contact 07845 297881. Provide your location (use
                 landmarks or motorway marker posts) and vehicle details.
               </p>
             </div>

@@ -58,7 +58,7 @@ export default function AboutPage() {
               </p>
               <div className="flex flex-wrap gap-4">
                 <a
-                  href="tel:+447856978630"
+                  href="tel:+447845297881"
                   className="bg-primary-container text-on-primary-container px-8 py-4 font-bold text-lg hover:bg-primary-fixed-dim transition-all emergency-glow"
                 >
                   GET IMMEDIATE HELP
@@ -270,12 +270,12 @@ export default function AboutPage() {
             <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
               <a
                 className="w-full sm:w-auto bg-primary-container text-on-primary-container px-6 sm:px-12 py-4 sm:py-5 font-bold text-base sm:text-xl md:text-2xl sm:whitespace-nowrap hover:bg-primary-fixed-dim transition-all emergency-glow flex items-center justify-center gap-3"
-                href="tel:+447856978630"
+                href="tel:+447845297881"
               >
                 <span className="material-symbols-outlined text-2xl sm:text-3xl">
                   call
                 </span>
-                CALL +44 7856 978630
+                CALL 07845 297881
               </a>
             </div>
           </div>
